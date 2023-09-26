@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Verde -->
+    <RelativeLayout
+        android:id="@+id/verde"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#008000"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/textAngeles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angeles"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textTIDSM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIDSM"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_below="@id/textAngeles" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/verde"
+        android:layout_above="@+id/rojo"
+        android:background="#FFFFFF">
+        <View
+            android:id="@+id/linea1"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#0000FF"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="140dp"/>
+
+        <View
+            android:id="@+id/linea2"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#0000FF"
+            android:layout_marginEnd="140dp"
+            android:layout_alignParentEnd="true"
+     />
+
+    </RelativeLayout>
+
+    <!-- Rojo View -->
+    <View
+        android:id="@+id/rojo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FF0000"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
